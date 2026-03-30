@@ -4,13 +4,11 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-
-  <title>Kennedy's Portfolio</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
+  <title>Kennedy Nkhata | Portfolio</title>
+  <meta name="description" content="Portfolio of Kennedy Nkhata - Computer Science Graduate, ICT Assistant, Web Developer, and Data Analyst based in Malawi.">
+  <meta name="keywords" content="Kennedy Nkhata, ICT Assistant, Web Developer, Data Analyst, Malawi, Portfolio">
 
   <!-- Favicons -->
-  <!-- <link href="assets/img/favicon.png" rel="icon"> -->
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
@@ -26,25 +24,110 @@
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
-
+  
+  <style>
+    /* Additional custom styles for enhanced visual appeal */
+    .resume-section, .experience-item, .education-item, .certification-item, .reference-item {
+      transition: all 0.3s ease;
+    }
+    .resume-section:hover, .experience-item:hover, .education-item:hover {
+      transform: translateY(-3px);
+    }
+    .badge-soft {
+      background-color: rgba(52, 152, 219, 0.1);
+      color: #18d26e;
+      padding: 6px 12px;
+      border-radius: 20px;
+      font-size: 0.8rem;
+      font-weight: 500;
+      margin-right: 8px;
+      margin-bottom: 8px;
+      display: inline-block;
+    }
+    .skill-tag {
+      background: #2c2f3f;
+      color: #fff;
+      padding: 5px 15px;
+      border-radius: 30px;
+      font-size: 0.85rem;
+      margin: 0 5px 10px 0;
+      display: inline-block;
+      transition: 0.2s;
+    }
+    .skill-tag:hover {
+      background: #18d26e;
+      color: #000;
+    }
+    .portfolio-link {
+      background: #18d26e;
+      color: #fff;
+      padding: 8px 20px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: 500;
+      transition: 0.3s;
+    }
+    .portfolio-link:hover {
+      background: #0e9c4e;
+      color: #fff;
+    }
+    .timeline-badge {
+      font-size: 0.85rem;
+      color: #18d26e;
+      font-weight: 500;
+    }
+    .contact-detail {
+      margin-bottom: 15px;
+    }
+    .contact-detail i {
+      color: #18d26e;
+      margin-right: 12px;
+      font-size: 1.2rem;
+    }
+    .section-title h2::after {
+      content: "";
+      position: absolute;
+      display: block;
+      width: 50px;
+      height: 3px;
+      background: #18d26e;
+      bottom: 0;
+      left: 0;
+    }
+    .section-title h2 {
+      position: relative;
+      padding-bottom: 12px;
+      margin-bottom: 30px;
+    }
+    footer {
+      background: #040b14;
+      padding: 20px 0;
+      text-align: center;
+      color: #fff;
+    }
+    .profile .social-links a {
+      background: #2c2f3f;
+    }
+  </style>
 </head>
 
 <body>
 
-  <!-- ======= Mobile nav toggle button ======= -->
+  <!-- Mobile nav toggle button -->
   <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
 
-  <!-- ======= Header ======= -->
+  <!-- Header -->
   <header id="header">
     <div class="d-flex flex-column">
 
       <div class="profile">
-        <img src="assets/img/IMG_4765.JPG" alt="" class="img-fluid rounded-circle">
+        <img src="assets/img/IMG_4765.JPG" alt="Kennedy Nkhata" class="img-fluid rounded-circle">
         <h1 class="text-light"><a href="index.html">Kennedy Nkhata</a></h1>
         <div class="social-links mt-3 text-center">
-          <a href="https://www.facebook.com/kennedy.dubwabindernkhata" class="facebook"><i class="bx bxl-facebook"></i></a>
-          <a href="https://instagram.com/kennie_nkhata?igshid=MzMyNGUyNmU2YQ==" class="instagram"><i class="bx bxl-instagram"></i></a>
-          <a href="https://www.linkedin.com/in/kennedy-nkhata-66b0601a6" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+          <a href="https://www.facebook.com/kennedy.dubwabindernkhata" class="facebook" target="_blank"><i class="bx bxl-facebook"></i></a>
+          <a href="https://instagram.com/kennie_nkhata?igshid=MzMyNGUyNmU2YQ==" class="instagram" target="_blank"><i class="bx bxl-instagram"></i></a>
+          <a href="https://www.linkedin.com/in/kennedy-nkhata-66b0601a6" class="linkedin" target="_blank"><i class="bx bxl-linkedin"></i></a>
+          <a href="https://kennedynkhata.netlify.app" class="portfolio-link-header" target="_blank" style="background: #18d26e; border-radius: 50%; width: 36px; display: inline-flex; align-items: center; justify-content: center;"><i class="bx bx-link"></i></a>
         </div>
       </div>
 
@@ -53,139 +136,330 @@
           <li><a href="#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Home</span></a></li>
           <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>About</span></a></li>
           <li><a href="#skills" class="nav-link scrollto"><i class="bx bx-server"></i> <span>Skills</span></a></li>
+          <li><a href="#experience" class="nav-link scrollto"><i class="bx bx-briefcase"></i> <span>Experience</span></a></li>
+          <li><a href="#education" class="nav-link scrollto"><i class="bx bx-book"></i> <span>Education</span></a></li>
+          <li><a href="#certifications" class="nav-link scrollto"><i class="bx bx-award"></i> <span>Certifications</span></a></li>
+          <li><a href="#references" class="nav-link scrollto"><i class="bx bx-user-voice"></i> <span>References</span></a></li>
         </ul>
-      </nav><!-- .nav-menu -->
+      </nav>
     </div>
-  </header><!-- End Header -->
+  </header>
 
-  <!-- ======= Hero Section ======= -->
+  <!-- Hero Section -->
   <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
     <div class="hero-container" data-aos="fade-in">
       <h1>Hello,</h1>
       <h1>I am Kennedy Nkhata</h1>
-      <p>a <span class="typed" data-typed-items="Web Developer, Freelancer, data analyst, graphic designer"></span></p>
+      <p>a <span class="typed" data-typed-items="ICT Assistant, Web Developer, Data Analyst, Problem Solver, Project Manager"></span></p>
+      <div class="mt-4">
+        <a href="#experience" class="btn btn-outline-light btn-lg me-2 scrollto">View Experience</a>
+        <a href="https://kennedynkhata.netlify.app" target="_blank" class="btn btn-success btn-lg">Portfolio <i class="bi bi-box-arrow-up-right"></i></a>
+      </div>
     </div>
-  </section><!-- End Hero -->
+  </section>
 
   <main id="main">
 
-    <!-- ======= About Section ======= -->
+    <!-- About Section (Enhanced with CV details) -->
     <section id="about" class="about">
       <div class="container">
-
         <div class="section-title">
           <h2>About</h2>
-          <p>I am a computer science graduate passionate about leveraging technology to solve real-world problems. With a solid foundation in computer science principles and a hunger for learning, I am excited to embark on a journey of continuous growth and innovation.</p>
+          <p>A motivated Computer Science graduate with hands-on experience in IT support, systems troubleshooting, and network maintenance. Proven ability to deliver technical solutions and drive project success from conception to launch. Committed to maintaining and optimizing IT infrastructure systems with a focus on innovation and efficiency.</p>
         </div>
 
         <div class="row">
           <div class="col-lg-4" data-aos="fade-right">
-            <img src="assets/img/IMG_4765.JPG" class="img-fluid" alt="">
+            <img src="assets/img/IMG_4765.JPG" class="img-fluid rounded shadow" alt="Kennedy">
           </div>
           <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
-            <h3>More...</h3>
-            <p class="fst-italic">
-              I hold a Bachelor's degree in Computer Science from University Of Malawi, where I honed my skills in programming, algorithms, and software development. My academic achievements and coursework have equipped me with a strong technical background
-            </p>
+            <h3>ICT Assistant &amp; Web Developer</h3>
+            <p class="fst-italic">Based in Lilongwe, Malawi — passionate about solving real-world problems through technology and delivering high-impact projects on time and within budget.</p>
             <div class="row">
               <div class="col-lg-6">
                 <ul>
                   <li><i class="bi bi-chevron-right"></i> <strong>Birthday:</strong> <span>6 February 1998</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <span>+265 991 412 156</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <span>+265 982 202 920 / +265 885 698 236</span></li>
                   <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span>Lilongwe, Malawi</span></li>
+                  <!-- <li><i class="bi bi-chevron-right"></i> <strong>Freelance:</strong> <span>Available</span></li> -->
                 </ul>
               </div>
               <div class="col-lg-6">
                 <ul>
                   <li><i class="bi bi-chevron-right"></i> <strong>Age:</strong> <span>27</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Degree:</strong> <span>Bachelors Degree</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Degree:</strong> <span>BSc Computer Science</span></li>
                   <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span>nkhatakennedy1@gmail.com</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Freelance:</strong> <span>Available</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Portfolio:</strong> <span><a href="https://kennedynkhata.netlify.app" target="_blank">kennedynkhata.netlify.app</a></span></li>
                 </ul>
               </div>
             </div>
+            <div class="mt-3">
+              <a href="#experience" class="portfolio-link scrollto">View Professional Journey <i class="bi bi-arrow-down-circle"></i></a>
+            </div>
           </div>
         </div>
-
       </div>
-    </section><!-- End About Section -->
+    </section>
 
-
-    <!-- ======= Skills Section ======= -->
+    <!-- Skills Section (enhanced with CV categories) -->
     <section id="skills" class="skills section-bg">
       <div class="container">
-
         <div class="section-title">
-          <h2>Skills</h2>
-          <p>My skill set includes proficiency in programming languages such as Python, as well as expertise in web development technologies like HTML, CSS, and JavaScript. I'm also familiar with database management using SQL and have experience with data analysis and visualization tools</p>
+          <h2>Technical & Professional Skills</h2>
+          <p>Comprehensive skill set spanning systems administration, programming, and digital marketing. Proven expertise in troubleshooting, network maintenance, and delivering end-to-end tech solutions.</p>
         </div>
 
-        <div class="row skills-content">
-
+        <div class="row">
           <div class="col-lg-6" data-aos="fade-up">
-
-            <div class="progress">
-              <span class="skill">HTML <i class="val">80%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
+            <h5 class="mb-3"><i class="bi bi-pc-display"></i> Systems & Networking</h5>
+            <div class="mb-3">
+              <span class="skill-tag">Hardware/Software Troubleshooting</span>
+              <span class="skill-tag">Network Connectivity</span>
+              <span class="skill-tag">System Installation & Configuration</span>
+              <span class="skill-tag">System Performance Monitoring</span>
+              <span class="skill-tag">IT Support</span>
             </div>
-
-            <div class="progress">
-              <span class="skill">CSS <i class="val">70%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
+            <h5 class="mb-3 mt-4"><i class="bi bi-code-square"></i> Programming & Databases</h5>
+            <div class="mb-3">
+              <span class="skill-tag">Python</span>
+              <span class="skill-tag">JavaScript</span>
+              <span class="skill-tag">SQL</span>
+              <span class="skill-tag">Database Management</span>
+              <span class="skill-tag">React</span>
+              <span class="skill-tag">HTML/CSS</span>
             </div>
-
-            <div class="progress">
-              <span class="skill">JavaScript <i class="val">70%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-
           </div>
-
           <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-
-            <div class="progress">
-              <span class="skill">Python <i class="val">60%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
+            <h5 class="mb-3"><i class="bi bi-tools"></i> Tools & Professional</h5>
+            <div class="mb-3">
+              <span class="skill-tag">Git</span>
+              <span class="skill-tag">Microsoft Office Suite</span>
+              <!-- <span class="skill-tag">Canva</span> -->
+              <span class="skill-tag">Data Analysis Tools</span>
+              <span class="skill-tag">Project Management</span>
             </div>
-            
-
-            <div class="progress">
-              <span class="skill">WordPress <i class="val">60%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
+            <h5 class="mb-3 mt-4"><i class="bi bi-people"></i> Soft Skills</h5>
+            <div class="mb-3">
+              <span class="skill-tag">Time Management</span>
+              <span class="skill-tag">Problem Solving</span>
+              <span class="skill-tag">Multitasking</span>
+              <span class="skill-tag">Communication</span>
+              <span class="skill-tag">Client Reporting</span>
             </div>
-
-            <div class="progress">
-              <span class="skill">React <i class="val">55%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-
           </div>
-
         </div>
 
+        <!-- Progress bars for key technical tools (styling) -->
+        <div class="row skills-content mt-4">
+          <div class="col-lg-6" data-aos="fade-up">
+            <div class="progress">
+              <span class="skill">HTML/CSS <i class="val">85%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+            <div class="progress">
+              <span class="skill">JavaScript/React <i class="val">75%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+            <div class="progress">
+              <span class="skill">Python <i class="val">70%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="progress">
+              <span class="skill">Database Management (SQL) <i class="val">75%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+            <div class="progress">
+              <span class="skill">IT Support & Troubleshooting <i class="val">90%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+            <div class="progress">
+              <span class="skill">Project Management <i class="val">85%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-    </section><!-- End Skills Section -->
+    </section>
 
-   
-  </main><!-- End #main -->
+    <!-- Experience Section (from CV) -->
+    <section id="experience" class="resume-section">
+      <div class="container">
+        <div class="section-title">
+          <h2>Work Experience</h2>
+          <p>Professional roles where I delivered measurable results, minimized downtime, managed full-cycle projects, and contributed to data-driven decision making.</p>
+        </div>
+        <div class="row">
+          <div class="col-lg-12" data-aos="fade-up">
+            <div class="resume-item pb-3 mb-4 border-bottom">
+              <h4>ICT Assistant</h4>
+              <h5>Financial Intelligence Authority – Lilongwe | Aug 2025 – Present</h5>
+              <ul>
+                <li>Perform hardware and software troubleshooting to minimize downtime and ensure operational efficiency.</li>
+                <li>Support installation, configuration, and maintenance of computer systems, applications, and peripheral devices.</li>
+                <li>Troubleshoot network connectivity problems and assist in network maintenance.</li>
+                <li>Monitor system performance and assist in basic log reviews to identify potential issues.</li>
+              </ul>
+            </div>
+            <div class="resume-item pb-3 mb-4 border-bottom">
+              <h4>Project Manager, Web Developer & Sales Marketing</h4>
+              <h5>INNOVIL Malawi – Lilongwe (Remote) | Oct 2024 – July 2025</h5>
+              <ul>
+                <li>Successfully managed end-to-end delivery of 5+ client websites, meeting 100% of deadlines and completing projects under budget.</li>
+                <li>Developed responsive and dynamic websites using React, HTML/CSS, JavaScript, and Framer.</li>
+                <li>Executed targeted digital marketing campaigns on Facebook and Instagram, increasing lead generation by 15% for a key client.</li>
+                <li>Maintained ongoing client communication, reporting, and ensured high satisfaction.</li>
+              </ul>
+            </div>
+            <div class="resume-item pb-3 mb-4">
+              <h4>Research Assistant</h4>
+              <h5>World Vision Malawi (LMMS Project) – Dowa | Jun 2024 – Jul 2024</h5>
+              <ul>
+                <li>Collected and validated over 500 beneficiary data points using digital tools, ensuring data accuracy for a critical field project.</li>
+                <li>Cleaned and analyzed project data using Excel, helping to create reports that identified key trends for program improvement.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-  <!-- ======= Footer ======= -->
+    <!-- Education Section -->
+    <section id="education" class="section-bg">
+      <div class="container">
+        <div class="section-title">
+          <h2>Education</h2>
+        </div>
+        <div class="row">
+          <div class="col-lg-12" data-aos="fade-up">
+            <div class="resume-item mb-4">
+              <h4>Bachelor of Science in Computer Science</h4>
+              <h5>University of Malawi, Zomba | 2018 – 2023</h5>
+              <p>software development, data structures,systems analysis and data analysis. Foundation in modern computing principles and hands-on projects.</p>
+            </div>
+            <div class="resume-item">
+              <h4>Malawi School Certificate of Education 2017</h4>
+              <h5>Mzimba Secondary School | 2017</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications">
+      <div class="container">
+        <div class="section-title">
+          <h2>Certifications</h2>
+          <p>Continuous learning and professional development in data management and analysis.</p>
+        </div>
+        <div class="row">
+          <div class="col-lg-6" data-aos="fade-right">
+            <div class="card mb-3 border-0 shadow-sm">
+              <div class="card-body">
+                <i class="bi bi-bar-chart-line fs-2 text-success"></i>
+                <h5 class="mt-2">DHIS2 Data Analysis Fundamentals</h5>
+                <p class="text-muted">Proficiency in analyzing health data using DHIS2 platform, extracting insights for decision-making.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6" data-aos="fade-left">
+            <div class="card mb-3 border-0 shadow-sm">
+              <div class="card-body">
+                <i class="bi bi-database-check fs-2 text-success"></i>
+                <h5 class="mt-2">DHIS2 Data Capture and Validation Fundamentals</h5>
+                <p class="text-muted">Expertise in accurate data entry, validation techniques, and maintaining data integrity.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Languages Section (added from CV) -->
+    <section id="languages" class="section-bg">
+      <div class="container">
+        <div class="section-title">
+          <h2>Languages</h2>
+        </div>
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="d-flex flex-wrap gap-3">
+              <span class="badge-soft fs-5"><i class="bi bi-globe"></i> English – Full Professional Proficiency</span>
+              <span class="badge-soft fs-5"><i class="bi bi-chat-dots"></i> Chichewa – Native Proficiency</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- References Section (from CV) -->
+    <section id="references">
+      <div class="container">
+        <div class="section-title">
+          <h2>Professional References</h2>
+          <p>Available upon request or connect with my recommenders below.</p>
+        </div>
+        <div class="row g-4">
+          <div class="col-md-4" data-aos="zoom-in">
+            <div class="card h-100 border-0 shadow-sm text-center p-3">
+              <i class="bi bi-person-badge fs-1 text-success"></i>
+              <h5 class="mt-2">Eldridge C Mwangonde</h5>
+              <p class="mb-1"><strong>IT Director</strong><br>Financial Intelligence Authority</p>
+              <p class="mb-0 small">Phone: +265 999 987 900 / +265 882 887 900</p>
+              <p class="small">Email: emwangonde@fia.gov.mw</p>
+            </div>
+          </div>
+          <div class="col-md-4" data-aos="zoom-in" data-aos-delay="100">
+            <div class="card h-100 border-0 shadow-sm text-center p-3">
+              <i class="bi bi-person-workspace fs-1 text-success"></i>
+              <h5 class="mt-2">Isaac Chingamcheke</h5>
+              <p class="mb-1"><strong>Supervisor</strong><br>INNOVIL Digital Marketing Agency</p>
+              <p class="mb-0 small">Phone: +971 55 569 2534</p>
+              <p class="small">Email: ichingamcheke@gmail.com</p>
+            </div>
+          </div>
+          <div class="col-md-4" data-aos="zoom-in" data-aos-delay="200">
+            <div class="card h-100 border-0 shadow-sm text-center p-3">
+              <i class="bi bi-tree fs-1 text-success"></i>
+              <h5 class="mt-2">Innocent Spencer Banda</h5>
+              <p class="mb-1"><strong>LMMS Project Supervisor</strong><br>World Vision Malawi</p>
+              <p class="mb-0 small">Phone: +265 996 962 230</p>
+              <p class="small">Email: innospencerb@gmail.com</p>
+            </div>
+          </div>
+        </div>
+        <div class="row mt-4">
+          <div class="col text-center">
+            <a href="mailto:nkhatakennedy1@gmail.com" class="portfolio-link me-2"><i class="bi bi-envelope"></i> Contact Me</a>
+            <a href="https://kennedynkhata.netlify.app" target="_blank" class="btn btn-outline-success"><i class="bi bi-folder-symlink"></i> View Full Portfolio</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
   <footer id="footer">
-    <div class="container">   
+    <div class="container">
+      <p>© 2025 Kennedy Nkhata — ICT Assistant | Web Developer | Data Analyst</p>
+      <p class="small">Lilongwe, Malawi | +265 982 202 920 | nkhatakennedy1@gmail.com</p>
     </div>
-  </footer><!-- End  Footer -->
+  </footer>
 
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
@@ -200,9 +474,19 @@
   <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
   <script src="assets/vendor/php-email-form/validate.js"></script>
 
-  <!-- Template Main JS File -->
+  <!-- Main JS -->
   <script src="assets/js/main.js"></script>
-
+  <script>
+    // Additional init for typed
+    if (typeof Typed !== 'undefined') {
+      new Typed('.typed', {
+        strings: ["ICT Assistant", "Web Developer", "Data Analyst", "Project Manager", "Problem Solver"],
+        typeSpeed: 60,
+        backSpeed: 30,
+        loop: true
+      });
+    }
+  </script>
 </body>
 
 </html>
